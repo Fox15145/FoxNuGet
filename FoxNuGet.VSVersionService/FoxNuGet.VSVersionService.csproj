@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>FoxNuGet.VSVersionService Title</Title>
+    <Authors>Fox 15.14.5</Authors>
+    <Copyright>Fox15145</Copyright>
+    <PackageTags>NuSpec;NuGet;Package;Version;Versionning;Git;Visual Studio project; Visual Studio solution;</PackageTags>
+    <PackageReleaseNotes>Releaser note du 23/09/2023</PackageReleaseNotes>
+    <PackageProjectUrl>project_url</PackageProjectUrl>
+  
+<AssemblyVersion>1.0.0.36</AssemblyVersion>
+</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FoxNuGet.VSGit\FoxNuGet.VSGit.csproj" />
+    <ProjectReference Include="..\FoxNuGet.VSNuGet\FoxNuGet.VSNuGet.csproj" />
+    <ProjectReference Include="..\FoxNuGet.VSSolution\FoxNuGet.VSSolution.csproj" />
+    <ProjectReference Include="..\FoxNuGet.VSTools\FoxNuGet.VSTools.csproj" />
+  </ItemGroup>
+
+</Project>

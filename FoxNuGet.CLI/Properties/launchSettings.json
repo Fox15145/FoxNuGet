@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FoxNuGet.CLI": {
+      "commandName": "Project",
+      "commandLineArgs": "c7fef3836d69944d0799f62fe7da8983 DEBUG"
+    }
+  }
+}

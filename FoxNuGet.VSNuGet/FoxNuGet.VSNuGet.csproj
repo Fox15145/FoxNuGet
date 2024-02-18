@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <!--<ImplicitUsings>enable</ImplicitUsings>-->
+    <!--<Nullable>enable</Nullable>-->
+    <Description>plopi
+plopa</Description>
+    <Copyright>Davoud 2023</Copyright>
+    <!--<PackageIcon>299063_heart_icon.ico</PackageIcon>-->
+    <PackageTags>Test;nuget</PackageTags>
+    <Company>Fox &amp; Co</Company>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.0.36</AssemblyVersion>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <SignAssembly>True</SignAssembly>
+    <!--<AssemblyOriginatorKeyFile>C:\Users\User1\source\repos\NugetGeneratorDemo\NuGet.Assembly.Versioning.Handler\Key.snk</AssemblyOriginatorKeyFile>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\nuget.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\nuget.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <!--<ItemGroup>
+    <None Include="F:\Users\Fox\Downloads\299063_heart_icon.ico">
+      <Pack>false</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+    <PackageReference Include="NuGet.Packaging" Version="6.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FoxNuGet.VSSolution\FoxNuGet.VSSolution.csproj" />
+    <ProjectReference Include="..\FoxNuGet.VSTools\FoxNuGet.VSTools.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

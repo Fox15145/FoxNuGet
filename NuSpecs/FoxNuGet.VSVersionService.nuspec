@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>FoxNuGet.VSVersionService</id>
+    <version>$version$</version>
+    <title>FoxNuGet.VSVersionService Title</title>
+    <authors>Moi</authors>
+    <summary>Un super nuget de nuget!</summary>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
+    <description>FoxNuGet.VSVersionService.dll
+FoxNuGet.VSNuget.dll
+FoxNuGet.VSSolution.dll
+FoxNuGet.VSGit.dll
+FoxNuGet.VSTools.dll</description>
+    <releaseNotes>09/10/2023 10:37:05
+   • [BLL] VSNuGet - Match git modifications with nuspec projects.
+   • Potentiel bug de récupération de projet modifiés depuis le git log détecté.
+   • []Chech assemblies existence.
+   • Cleanning Code.</releaseNotes>
+    <copyright>Fox15145</copyright>
+    <tags>NuSpec;NuGet;Package;Version;Versionning;Git;Visual Studio project; Visual Studio solution;</tags>
+    <dependencies>
+      <group targetFramework="netStandard2.0">
+        <dependency id="NuGet.Packaging" version="6.7.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="../FoxNuGet.VSVersionService/bin/DEBUG/netStandard2.0/FoxNuGet.VSVersionService.dll" target="lib\netStandard2.0\FoxNuGet.VSVersionService.dll" />
+    <file src="../FoxNuGet.VSVersionService/bin/DEBUG/netStandard2.0/FoxNuGet.VSNuget.dll" target="lib\netStandard2.0\FoxNuGet.VSNuget.dll" />
+    <file src="../FoxNuGet.VSVersionService/bin/DEBUG/netStandard2.0/FoxNuGet.VSSolution.dll" target="lib\netStandard2.0\FoxNuGet.VSSolution.dll" />
+    <file src="../FoxNuGet.VSVersionService/bin/DEBUG/netStandard2.0/FoxNuGet.VSGit.dll" target="lib\netStandard2.0\FoxNuGet.VSGit.dll" />
+    <file src="../FoxNuGet.VSVersionService/bin/DEBUG/netStandard2.0/FoxNuGet.VSTools.dll" target="lib\netStandard2.0\FoxNuGet.VSTools.dll" />
+  </files>
+</package>
